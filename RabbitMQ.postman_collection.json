@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "edb98b10-70a8-4c83-9000-f8e2d47d91a3",
+		"name": "RabbitMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24790122"
+	},
+	"item": [
+		{
+			"name": "Send log Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logType\" : \"Info\",\r\n    \"message\" : \"Info message successfull\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sendLog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sendLog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send log Warning",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logType\" : \"Warning\",\r\n    \"message\" : \"Warning message successfull\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sendLog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sendLog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send log Error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logType\" : \"Error\",\r\n    \"message\" : \"Error message successfull\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sendLog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sendLog"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
